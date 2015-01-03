@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<section id="cover">
+  <div class="container">
+    <div class="title">
+      <h1>Kuba Kuźma</h1>
+      <h2>Ruby on Rails and JavaScript Consultant, Developer</h2>
+
+      <a href="#contact" class="btn btn-success btn-lg">Get in touch</a>
+    </div>
+
+    <img src="/i/kubakuzma.png" alt="Kuba Kuźma">
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    {% for testimonial in site.data.testimonials %}
+      <div class="testimonial">
+        <i class="icon-quote-left"></i>
+        <br>
+        <h4>
+          {{testimonial.content}}
+        </h4>
+        <h5>
+          {{testimonial.author}}
+          &nbsp;
+          <img src="/i/{{testimonial.picture}}" alt="{{testimonial.author}}" class="img-circle" width="75">
+        </h5>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h3 class="text-center">Contact</h3>
+
+        <p>
+          You can also send an email directly to <a href="mailto:kuba@jah.pl">kuba@jah.pl</a>.
+        </p>
+
+        <iframe height="350" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none" src="//qoobaa.wufoo.com/embed//m7x3q1/">
+          <a href="//qoobaa.wufoo.com/forms/m7x3q1/">Fill out a form</a>
+          or contact me directly at
+          <a href="mailto:kuba@jah.pl">kuba@jah.pl</a>.
+        </iframe>
+      </div>
+
+      <div class="col-md-6">
+        <h3 class="text-center">Legal Information</h3>
+        <div class="form-horizontal">
+
+          <div class="form-group">
+            <label class="control-label col-md-4">
+              Company name
+            </label>
+            <div class="col-md-8">
+              <p class="form-control-static">
+                Jakub Kuźma
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-4">
+              <abbr title="VAT identification number">VATIN</abbr>
+            </label>
+            <div class="col-md-8">
+              <p class="form-control-static">
+                <a href="http://ec.europa.eu/taxation_customs/vies/vatResponse.html?memberStateCode=PL&number=5492180618&locale=en">
+                  PL&nbsp;5492180618
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-4">
+              <abbr title="National Official Business Register">REGON</abbr>
+            </label>
+            <div class="col-md-8">
+              <p class="form-control-static">
+                121233354
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-4">
+              Address
+            </label>
+            <div class="col-md-8">
+              <p class="form-control-static">
+                <a href="https://www.google.com/maps?q=ul.+Opawska+6,+44-100+Gliwice,+Poland">
+                  ul. Opawska 6/20<br>
+                  44-100 Gliwice<br>
+                  Poland<br>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8 col-md-offset-4">
+              <p class="form-control-static">
+                <a href="https://prod.ceidg.gov.pl/CEIDG/ceidg.public.ui/SearchDetails.aspx?Id=7f39e896-f7bf-4a8d-8fe6-46dde7291b72">
+                  See full profile in <abbr title="Central Registration and Information on Business">CEIDG</abbr>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <video controls height="500">
+      <source src="/v/sar.avi" type="video/mp4">
+      <source src="/v/sar.ogv" type="video/ogg">
+      <source src="/v/sar.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls height="500">
+      <source src="/v/mobilling.avi" type="video/mp4">
+      <source src="/v/mobilling.ogv" type="video/ogg">
+      <source src="/v/mobilling.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="pull-left">
+      &copy; 2010-2015 Kuba Kuźma. All Rights Reserved.
+    </div>
+    <div class="pull-right">
+      <a href="https://github.com/qoobaa">
+        <svg viewBox="0 0 41 41" height="20">
+          {% include svg/github.svg %}
+        </svg>
+      </a>
+      <a href="https://twitter.com/qoobaa">
+        <svg viewBox="0 0 172 140" height="20">
+          {% include svg/twitter.svg %}
+        </svg>
+      </a>
+      <a href="https://plus.google.com/113988154254003201221">
+        <svg viewBox="0 0 127 124" height="20">
+          {% include svg/google-plus.svg %}
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>

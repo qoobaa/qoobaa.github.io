@@ -1,0 +1,92 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset
+@import "bootstrap/normalize";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+@import url(//fonts.googleapis.com/css?family=OpenSans:300,400,700,400italic&subset=latin,latin-ext);
+
+html.embed,
+body {
+    background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+#header,
+#errorLi,
+.instruct {
+    display: none;
+}
+
+.wufoo {
+    font-family: OpenSans, sans-serif !important;
+    font-size: 16px !important;
+
+    li.focused,
+    li.error {
+        background: none !important;
+    }
+
+    li {
+        @extend .form-group;
+        padding: 0 !important;
+        width: 100% !important;
+
+        label {
+            float: none;
+            width: 100% !important;
+            font-size: 16px !important;
+        }
+
+        div {
+            padding: 0 !important;
+            width: 100% !important;
+            font-size: 16px !important;
+        }
+
+        textarea,
+        input {
+            @extend .form-control;
+            width: 100% !important;
+            padding: 6px;
+        }
+
+        textarea {
+            height: 180px;
+        }
+
+        .error {
+            @extend .help-block;
+        }
+    }
+
+    .buttons {
+        div {
+            width: 100px !important;
+            height: 35px !important;
+            overflow: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .submit {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+}

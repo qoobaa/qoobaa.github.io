@@ -1,0 +1,124 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "alfios";
+@import "open_sans";
+@import "variables";
+@import "bootstrap";
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 30px;
+}
+
+#cover {
+    background-image: -ms-linear-gradient(top, #FCF6DF 0%, #FFFFFF 30%);
+    background-image: -moz-linear-gradient(top, #FCF6DF 0%, #FFFFFF 30%);
+    background-image: -o-linear-gradient(top, #FCF6DF 0%, #FFFFFF 30%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FCF6DF), color-stop(0.3, #FFFFFF));
+    background-image: -webkit-linear-gradient(top, #FCF6DF 0%, #FFFFFF 30%);
+    background-image: linear-gradient(to bottom, #FCF6DF 0%, #FFFFFF 30%);
+
+    .container {
+        position: relative;
+        height: 600px;
+    }
+
+    .title {
+        text-align: right;
+        padding: 125px 0;
+    }
+
+    h1 {
+        font: bold 10rem Alfios;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font: normal 3rem Alfios;
+        margin-top: 10px;
+    }
+
+    a {
+        font-size: 3rem;
+        padding: 10px 30px;
+        margin-top: 150px;
+    }
+
+    img {
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+    }
+
+    @media (max-width: $screen-md-max) {
+        .container {
+            text-align: center;
+            height: auto;
+        }
+
+        .title {
+            margin-bottom: 500px;
+            text-align: center;
+        }
+
+        a {
+            margin-top: 50px;
+        }
+
+        img {
+            left: 50%;
+            margin-left: -253px;
+        }
+    }
+
+}
+
+#testimonials {
+    padding: 50px 0;
+    background: url(/i/bg/low_contrast_linen.png);
+    background-color: $gray-dark;
+    color: $gray-lighter;
+    text-align: center;
+
+    .testimonial {
+        font: italic 3.5rem OpenSans;
+        margin: 30px 0;
+    }
+
+    h5 {
+        color: $gray-light;
+        text-align: right;
+    }
+
+    img {
+        border: 2px $gray-light solid;
+    }
+}
+
+#contact {
+    padding: 50px 0;
+    background: url(/i/bg/groovepaper.png);
+}
+
+.site-footer {
+    background: black;
+    color: $gray;
+    line-height: 60px;
+
+    a {
+        margin-left: 10px;
+    }
+}
