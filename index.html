@@ -15,6 +15,37 @@ layout: default
   </div>
 </section>
 
+<section id="marketing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <svg viewBox="0 0 80 65" height="100" class="shadow">
+          {% include svg/ruby.svg %}
+        </svg>
+
+        <h3>Ruby on Rails</h3>
+      </div>
+      <div class="col-md-4">
+        <svg viewBox="0 0 327 371" height="100" class="shadow">
+          {% include svg/javascript.svg %}
+        </svg>
+
+        <h3>JavaScript</h3>
+      </div>
+      <div class="col-md-4">
+        <svg viewBox="0 0 128 128" height="100" class="shadow">
+          {% include svg/phonegap.svg %}
+        </svg>
+
+        <h3>Mobile Applications</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+</section>
+
 <section id="testimonials">
   <div class="container">
     {% for testimonial in site.data.testimonials %}
@@ -117,24 +148,6 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <video controls height="500">
-      <source src="/v/sar.avi" type="video/mp4">
-      <source src="/v/sar.ogv" type="video/ogg">
-      <source src="/v/sar.webm" type="video/webm">
-      Your browser does not support the video tag.
-    </video>
-
-    <video controls height="500">
-      <source src="/v/mobilling.avi" type="video/mp4">
-      <source src="/v/mobilling.ogv" type="video/ogg">
-      <source src="/v/mobilling.webm" type="video/webm">
-      Your browser does not support the video tag.
-    </video>
   </div>
 </section>
 
