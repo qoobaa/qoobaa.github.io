@@ -30,6 +30,7 @@ section {
 #cover {
     background-image: linear-gradient(to bottom, #FCF6DF 0%, #FFFFFF 30%);
     padding: 0;
+    overflow: hidden;
 
     .container {
         position: relative;
