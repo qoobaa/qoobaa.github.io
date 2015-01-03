@@ -92,6 +92,16 @@ section {
     background-color: $gray-dark;
     color: $gray-lighter;
     text-align: center;
+
+    svg {
+        margin: 50px 0;
+        -webkit-filter: drop-shadow(5px 5px 5px #000);
+        filter: drop-shadow(5px 5px 5px #000);
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
 }
 
 #projects {
@@ -138,9 +148,4 @@ section {
             opacity: 0.8;
         }
     }
-}
-
-.shadow {
-    -webkit-filter: drop-shadow(5px 5px 5px #000);
-            filter: drop-shadow(5px 5px 5px #000);
 }
