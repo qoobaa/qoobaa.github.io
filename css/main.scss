@@ -96,7 +96,7 @@ section {
     svg {
         margin: 50px 0;
         -webkit-filter: drop-shadow(5px 5px 5px #000);
-        filter: drop-shadow(5px 5px 5px #000);
+                filter: drop-shadow(5px 5px 5px #000);
     }
 
     p {
@@ -106,7 +106,6 @@ section {
 
 #projects {
     background: url(/i/bg/fabric_of_squares_gray.png);
-    height: 500px;
 }
 
 #testimonials {
