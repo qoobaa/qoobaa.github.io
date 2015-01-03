@@ -31,10 +31,11 @@ section {
     background-image: linear-gradient(to bottom, #FCF6DF 0%, #FFFFFF 30%);
     padding: 0;
     overflow: hidden;
+    margin-bottom: -120px;
 
     .container {
         position: relative;
-        height: 600px;
+        height: 720px;
     }
 
     .title {
@@ -60,7 +61,7 @@ section {
 
     img {
         position: absolute;
-        bottom: -120px;
+        bottom: 0;
         left: 0;
     }
 
@@ -71,7 +72,7 @@ section {
         }
 
         .title {
-            margin-bottom: 500px;
+            margin-bottom: 620px;
             text-align: center;
         }
 
