@@ -28,29 +28,26 @@ section {
 }
 
 #cover {
-    background-image: linear-gradient(to bottom, #FCF6DF 0%, #FFFFFF 30%);
+    background-image: url("/i/cover.png"), linear-gradient(to bottom, #FCF6DF 0%, #FFFFFF 75%);
+    background-position: 75% 50%;
+    background-size: cover;
     padding: 0;
     overflow: hidden;
-    margin-bottom: -120px;
-
-    .container {
-        position: relative;
-        height: 720px;
-    }
+    width: 100%;
+    height: 100%;
 
     .title {
-        text-align: right;
-        padding: 125px 0;
+        padding: 220px 0;
     }
 
     h1 {
         font: bold 10rem Alfios;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     h2 {
         font: normal 3rem Alfios;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     a {
@@ -59,37 +56,27 @@ section {
         margin-top: 120px;
     }
 
-    img {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    @media (max-width: $screen-md-max) {
-        .container {
-            text-align: center;
-            height: auto;
+    @media (max-width: $screen-sm-max) {
+        .title {
+            width: 50%;
         }
 
-        .title {
-            margin-bottom: 620px;
-            text-align: center;
+        h1 {
+            font-size: 7rem;
+        }
+
+        h2 {
+            font-size: 2rem;
         }
 
         a {
-            margin-top: 50px;
-        }
-
-        img {
-            left: 50%;
-            margin-left: -253px;
+            font-size: 2rem;
+            margin-top: 0px;
         }
     }
-
 }
 
 #marketing {
-    padding-top: 100px;
     background: url(/i/bg/low_contrast_linen.png);
     background-color: $gray-dark;
     color: $gray-lighter;
