@@ -38,6 +38,7 @@ section {
 
     .title {
         padding: 220px 0;
+        width: 60%;
     }
 
     h1 {
@@ -57,10 +58,6 @@ section {
     }
 
     @media (max-width: $screen-sm-max) {
-        .title {
-            width: 50%;
-        }
-
         h1 {
             font-size: 7rem;
         }
