@@ -80,8 +80,11 @@ section {
 
     svg {
         margin: 50px 0;
+    }
+
+    .shadow {
         -webkit-filter: drop-shadow(5px 5px 5px #000);
-                filter: drop-shadow(5px 5px 5px #000);
+        filter: drop-shadow(5px 5px 5px #000);
     }
 
     p {
