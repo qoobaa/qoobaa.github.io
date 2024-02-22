@@ -8,11 +8,19 @@
   <link href="https://fonts.cdnfonts.com/css/crimson-text" rel="stylesheet">
 </head>
 <body style="font-family: 'Open Sans'; font-size: 0.9rem;">
-<div class="container">
+<div class="container" style="max-width: 960px;">
   <div class="d-flex my-3">
     <img src="https://kubakuzma.com/i/avatar.jpg" alt="avatar" class="img-thumbnail" width="200">
     <div class="p-3">
-      <h1 style="font-family: 'Crimson Text'">Kuba Kuźma</h1>
+      <div class="d-flex justify-content-between">
+        <h1 style="font-family: 'Crimson Text'">Kuba Kuźma</h1>
+        <div>
+          <a href="/cv.pdf" class="btn btn-primary d-print-none">
+            <i class="bi bi-filetype-pdf"></i>
+            Export to PDF
+          </a>
+        </div>
+      </div>
       <h2 class="text-body-tertiary fs-5">Senior Ruby, JavaScript Developer</h2>
       <p class="m-0">
         Full stack developer with more than 15+ years of experience in
@@ -51,7 +59,7 @@
     </li>
   </ul>
 
-<div class="container">
+<div class="container"  style="max-width: 960px;">
   <h2 class="my-3 text-primary fs-4 text-uppercase">Skills</h2>
   <ul class="list-inline">
     <li class="list-inline-item badge bg-primary">Ruby on Rails</li>
