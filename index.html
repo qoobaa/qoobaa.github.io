@@ -4,7 +4,7 @@ layout: default
 
 <section id="cover">
   <div class="container">
-    <div class="title">
+    <div class="title reveal">
       <h1>Kuba Kuźma</h1>
       <h2>Senior Software Engineer<br>Ruby, JavaScript, FinTech</h2>
 
@@ -15,9 +15,9 @@ layout: default
 
 <section id="marketing">
   <div class="container">
-    <h2 class="section-title">What I Do</h2>
+    <h2 class="section-title reveal">What I Do</h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="shadow">
           <svg viewBox="0 0 79.451248 64.793121" height="125">
             {% include svg/ruby.svg %}
@@ -30,7 +30,7 @@ layout: default
           Rails applications and APIs.
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="shadow">
           <svg viewBox="0 0 326.375 370.53123" height="125">
             {% include svg/javascript.svg %}
@@ -43,7 +43,7 @@ layout: default
           experiences.
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="shadow">
           <svg viewBox="0 0 576 512" height="125">
             {% include svg/credit-card.svg %}
@@ -62,12 +62,15 @@ layout: default
 
 <section id="projects">
   <div class="container">
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-5">
       <img alt="Strobe" class="screenshot img-thumbnail img-responsive" src="/i/projects/strobe.png" />
     </div>
     <div class="col-sm-7">
       <h3>Strobe</h3>
+      <div class="tags">
+        <span class="tag">HTML5</span><span class="tag">JavaScript</span>
+      </div>
       <p>
         <a href="http://techcrunch.com/2011/09/01/strobe-launches-game-changing-html5-app-platform/">
           The Strobe platform was launched in September 2011
@@ -87,9 +90,12 @@ layout: default
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-7">
       <h3>Triage</h3>
+      <div class="tags">
+        <span class="tag">Ruby on Rails</span><span class="tag">React</span>
+      </div>
       <p>
         Triage was an application that utilized AI to rapidly screen
         skin disorders using a smartphone. Established in 2015 in
@@ -105,21 +111,27 @@ layout: default
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-5">
       <img alt="Freeletics" class="screenshot img-thumbnail img-responsive" src="/i/projects/freeletics.png" />
     </div>
     <div class="col-sm-7">
       <h3>Freeletics</h3>
+      <div class="tags">
+        <span class="tag">Ruby on Rails</span><span class="tag">Angular</span>
+      </div>
       <p>
         <a href="https://www.freeletics.com/">Freeletic</a> is a German startup established in 2012, offering a platform that delivers personalized, high-intensity training plans. In mid-2014, I became a part of the team, contributing to the development and maintenance of their Rails API and Angular frontend. Additionally, I played a key role in breaking down the monolithic Rails backend into separate services catering to different products: <a href="https://www.freeletics.com/en/">Bodyweight</a>, <a href="https://www.freeletics.com/en/running">Running</a>, and <a href="https://www.freeletics.com/en/pages/nutrition/guide">Nutrition Guide</a>. With over <strong>50 million users</strong>, Freeletics offers multiple mobile applications. In 2018, the platform was <a href="https://techcrunch.com/2020/09/23/ai-powered-fitness-app-freeletics-scores-25m-series-b/">acquired by JAZZ Venture Partners</a>.
       </p>
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-7">
       <h3>Tiramizoo</h3>
+      <div class="tags">
+        <span class="tag">Node.js</span><span class="tag">Ruby on Rails</span>
+      </div>
       <p>
         <a href="https://www.tiramizoo.com/">Tiramizoo</a> is a German startup established in 2010, with a primary focus on offering local <strong>same-day delivery services</strong> in Munich. By 2012, the company had expanded its services to cover <strong>major German cities and collaborate with over 1200 courier companies</strong>. I joined the team at the beginning of 2012 to contribute to the development of a new API enabling seamless e-commerce integration and to reconstruct the web application. In September 2012, Tiramizoo <a href="https://www.htgf.de/en/daimler-acquires-interest-in-startup-company-tiramizoo/">was acquired by Daimler</a>.
       </p>
@@ -129,21 +141,27 @@ layout: default
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-5">
       <img alt="World Emissions Scenario Pathways" class="screenshot img-thumbnail img-responsive" src="/i/projects/pathways.png" />
     </div>
     <div class="col-sm-7">
       <h3>World Emissions Scenario Pathways</h3>
+      <div class="tags">
+        <span class="tag">Ruby on Rails</span><span class="tag">PostgreSQL</span>
+      </div>
       <p>
         <a href="https://www.climatewatchdata.org/pathways/">World Emissions Scenario Pathways</a> is an integral component of the broader <a href="https://www.climatewatchdata.org/">Climate Watch</a> platform, managed by the esteemed <a href="https://www.wri.org/">World Resources Institute</a>. This tool empowers users to explore economic and emissions scenarios, thus identifying opportunities to achieve countries' sustainable development and climate objectives. I became a member of the team in early 2018, contributing to the development of the project's backend for researchers, facilitating the import and management of emissions datasets. The <a href="https://github.com/Vizzuality/emissions-scenario-portal">source code</a> is available under the MIT license.
       </p>
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-7">
       <h3>Treatwell</h3>
+      <div class="tags">
+        <span class="tag">Ruby on Rails</span><span class="tag">Spree Commerce</span>
+      </div>
       <p>
         <a href="https://www.treatwellpetcare.ca/">Treatwell Pet Care</a> is a mobile veterinary service located in Ottawa, Canada. The company provides a membership-based preventive pet care service. My role involved overseeing the migration from an old WooCommerce-based solution to a new, extensively customized platform built on <a href="https://spreecommerce.org/">Spree Commerce</a>.
       </p>
@@ -153,21 +171,27 @@ layout: default
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-5">
       <img alt="billOHIP" class="screenshot img-thumbnail img-responsive" src="/i/projects/mobilling.png" />
     </div>
     <div class="col-sm-7">
       <h3>billOHIP</h3>
+      <div class="tags">
+        <span class="tag">Ruby on Rails</span><span class="tag">iOS</span><span class="tag">Android</span>
+      </div>
       <p>
         <a href="https://billohip.ca/">billOHIP</a> (also known as Mo-Billing) is an application designed to streamline the process of medical bill submissions by doctors in Ontario, Canada. Developed using <strong>Ruby on Rails</strong>, it is optimized for smooth performance on mobile devices and offers dedicated <strong>iOS and Android applications</strong>. In September 2017, <a href="https://github.com/bryanlarsen/mobilling">the source code</a> was released as free software under the AGPL version 3 license.
       </p>
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-7">
       <h3>Fakturama</h3>
+      <div class="tags">
+        <span class="tag">Ember.js</span><span class="tag">Firebase</span>
+      </div>
       <p>
         <a href="https://fakturama.pl/">Fakturama</a> is an invoicing application that stands out for being completely <strong><a href="https://github.com/cowbell/fakturama">open source</a></strong> and written entirely in JavaScript. Developed as an <a href="http://emberjs.com/">Ember</a> application, it leverages <a href="https://firebase.com/">Firebase</a> for data storage and relies on <a href="http://developer.yahoo.com/yql/">YQL</a> to fetch exchange rates from the <a href="http://www.nbp.pl/">National Polish Bank</a>. Remarkably, despite being hosted on <a href="https://pages.github.com/">GitHub Pages</a>, the application <strong>operates without a single line of custom server-side</strong> code.
       </p>
@@ -177,12 +201,15 @@ layout: default
     </div>
   </div>
 
-    <div class="row project">
+    <div class="row project reveal">
     <div class="col-sm-5">
       <img alt="Bombs!" class="screenshot img-thumbnail img-responsive" src="/i/projects/bombs.png" />
     </div>
     <div class="col-sm-7">
       <h3>Bombs!</h3>
+      <div class="tags">
+        <span class="tag">JavaScript</span><span class="tag">Canvas</span>
+      </div>
       <p>
         <a href="http://kubakuzma.com/bombs">Bombs!</a> is a fully playable, browser-based Dyna Blaster clone created back in 2011 using JavaScript and canvas. It utilizes the YUI 3 library, which is no longer maintained. The <a href="https://github.com/cowbell/fakturama">source code</a> is available on GitHub.
       </p>
@@ -194,20 +221,22 @@ layout: default
 
 <section id="testimonials">
   <div class="container">
-    {% for testimonial in site.data.testimonials %}
-    <div class="testimonial">
-      <i class="icon-quote-left"></i>
-      <br>
-      <h4>
-        {{testimonial.content}}
-      </h4>
-      <h5>
-        {{testimonial.author}}
-        &nbsp;
-        <img src="/i/testimonials/{{testimonial.picture}}" alt="{{testimonial.author}}" class="img-circle" width="75">
-      </h5>
+    <h2 class="section-title reveal">Testimonials</h2>
+    <div class="row">
+      {% for testimonial in site.data.testimonials %}
+      <div class="col-md-6 reveal">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            {{testimonial.content}}
+          </p>
+          <div class="testimonial-author">
+            <img src="/i/testimonials/{{testimonial.picture}}" alt="{{testimonial.author}}">
+            {{testimonial.author}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </section>
 
@@ -217,7 +246,7 @@ layout: default
 
       <div class="col-md-12">
         <p>
-          If you would like to contact me, please use the form below or send an email directly to <a href="mailto:kuba@kubakuzma.com">kuba@kubakuzma.com</a>.
+          Have a project in mind or want to say hi? I'd love to hear from you.
         </p>
 
         <iframe height="400" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none" src="//qoobaa.wufoo.com/embed//m7x3q1/">
@@ -242,6 +271,11 @@ layout: default
       <a href="https://github.com/qoobaa">
         <svg viewBox="0 0 41 41" height="20">
           {% include svg/github.svg %}
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/qoobaa">
+        <svg viewBox="0 0 448 512" height="20">
+          {% include svg/linkedin.svg %}
         </svg>
       </a>
     </div>
