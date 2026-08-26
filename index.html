@@ -10,6 +10,11 @@ layout: default
 
       <a href="#contact" class="btn btn-success btn-lg">Get in touch</a>
     </div>
+    <a href="#marketing" class="scroll-hint" aria-label="Scroll down">
+      <svg aria-hidden="true" role="presentation" viewBox="0 0 512 512" height="36">
+        {% include svg/chevron-down.svg %}
+      </svg>
+    </a>
   </div>
 </section>
 
@@ -19,7 +24,7 @@ layout: default
     <div class="row">
       <div class="col-md-4 reveal">
         <div class="shadow">
-          <svg viewBox="0 0 79.451248 64.793121" height="125">
+          <svg aria-hidden="true" role="presentation" viewBox="0 0 79.451248 64.793121" height="125">
             {% include svg/ruby.svg %}
           </svg>
         </div>
@@ -32,7 +37,7 @@ layout: default
       </div>
       <div class="col-md-4 reveal">
         <div class="shadow">
-          <svg viewBox="0 0 326.375 370.53123" height="125">
+          <svg aria-hidden="true" role="presentation" viewBox="0 0 326.375 370.53123" height="125">
             {% include svg/javascript.svg %}
           </svg>
         </div>
@@ -45,7 +50,7 @@ layout: default
       </div>
       <div class="col-md-4 reveal">
         <div class="shadow">
-          <svg viewBox="0 0 576 512" height="125">
+          <svg aria-hidden="true" role="presentation" viewBox="0 0 576 512" height="125">
             {% include svg/credit-card.svg %}
           </svg>
         </div>
@@ -65,7 +70,7 @@ layout: default
     <h2 class="section-title reveal">Selected Work</h2>
     <div class="row project reveal">
     <div class="col-sm-5">
-      <img alt="Strobe" class="screenshot img-thumbnail img-responsive" src="/i/projects/strobe.png" />
+      <img alt="Strobe" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/strobe.png" />
     </div>
     <div class="col-sm-7">
       <h3>Strobe</h3>
@@ -108,13 +113,13 @@ layout: default
       </p>
     </div>
     <div class="col-sm-5">
-      <img alt="Triage" class="screenshot img-thumbnail img-responsive" src="/i/projects/triage.png" />
+      <img alt="Triage" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/triage.png" />
     </div>
   </div>
 
     <div class="row project reveal">
     <div class="col-sm-5">
-      <img alt="Freeletics" class="screenshot img-thumbnail img-responsive" src="/i/projects/freeletics.png" />
+      <img alt="Freeletics" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/freeletics.png" />
     </div>
     <div class="col-sm-7">
       <h3>Freeletics</h3>
@@ -138,13 +143,13 @@ layout: default
       </p>
     </div>
     <div class="col-sm-5">
-      <img alt="Tiramizoo" class="screenshot img-thumbnail img-responsive" src="/i/projects/tiramizoo.png" />
+      <img alt="Tiramizoo" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/tiramizoo.png" />
     </div>
   </div>
 
     <div class="row project reveal">
     <div class="col-sm-5">
-      <img alt="World Emissions Scenario Pathways" class="screenshot img-thumbnail img-responsive" src="/i/projects/pathways.png" />
+      <img alt="World Emissions Scenario Pathways" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/pathways.png" />
     </div>
     <div class="col-sm-7">
       <h3>World Emissions Scenario Pathways</h3>
@@ -168,13 +173,13 @@ layout: default
       </p>
     </div>
     <div class="col-sm-5">
-      <img alt="Treatwell" class="screenshot img-thumbnail img-responsive" src="/i/projects/treatwell.png" />
+      <img alt="Treatwell" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/treatwell.png" />
     </div>
   </div>
 
     <div class="row project reveal">
     <div class="col-sm-5">
-      <img alt="billOHIP" class="screenshot img-thumbnail img-responsive" src="/i/projects/mobilling.png" />
+      <img alt="billOHIP" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/mobilling.png" />
     </div>
     <div class="col-sm-7">
       <h3>billOHIP</h3>
@@ -198,13 +203,13 @@ layout: default
       </p>
     </div>
     <div class="col-sm-5">
-      <img alt="Fakturama" class="screenshot img-thumbnail img-responsive" src="/i/projects/fakturama.png" />
+      <img alt="Fakturama" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/fakturama.png" />
     </div>
   </div>
 
     <div class="row project reveal">
     <div class="col-sm-5">
-      <img alt="Bombs!" class="screenshot img-thumbnail img-responsive" src="/i/projects/bombs.png" />
+      <img alt="Bombs!" class="screenshot img-thumbnail img-responsive" loading="lazy" src="/i/projects/bombs.png" />
     </div>
     <div class="col-sm-7">
       <h3>Bombs!</h3>
@@ -250,7 +255,7 @@ layout: default
           Have a project in mind or want to say hi? I'd love to hear from you.
         </p>
 
-        <iframe height="400" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none" src="//qoobaa.wufoo.com/embed//m7x3q1/">
+        <iframe title="Contact form" height="400" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%; border:none" src="//qoobaa.wufoo.com/embed//m7x3q1/">
           <a href="//qoobaa.wufoo.com/forms/m7x3q1/">Fill out a form</a>
           or contact me directly at
           <a href="mailto:kuba@kubakuzma.com">kuba@kubakuzma.com</a>.
@@ -265,20 +270,27 @@ layout: default
 
 <footer class="site-footer">
   <div class="container">
-    <div class="pull-left">
-      &copy; <script>document.write(new Date().getFullYear())</script> Kuba Kuźma
-    </div>
-    <div class="pull-right">
-      <a href="https://github.com/qoobaa">
-        <svg viewBox="0 0 41 41" height="20">
-          {% include svg/github.svg %}
-        </svg>
-      </a>
-      <a href="https://linkedin.com/in/qoobaa">
-        <svg viewBox="0 0 448 512" height="20">
-          {% include svg/linkedin.svg %}
-        </svg>
-      </a>
+    <div class="footer-inner">
+      <div class="copyright">
+        &copy; <script>document.write(new Date().getFullYear())</script> Kuba Kuźma
+      </div>
+      <div class="footer-links">
+        <a href="#cover">Home</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/qoobaa" aria-label="GitHub">
+          <svg aria-hidden="true" role="presentation" viewBox="0 0 41 41" height="20">
+            {% include svg/github.svg %}
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/qoobaa" aria-label="LinkedIn">
+          <svg aria-hidden="true" role="presentation" viewBox="0 0 448 512" height="20">
+            {% include svg/linkedin.svg %}
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </footer>

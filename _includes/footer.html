@@ -1,3 +1,9 @@
+<button class="back-to-top" type="button" aria-label="Back to top">
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 512 512" height="18">
+    {% include svg/chevron-up.svg %}
+  </svg>
+</button>
+
 <script>
 (function () {
   var els = document.querySelectorAll('.reveal');
@@ -14,5 +20,36 @@
     });
   }, { threshold: 0.15 });
   els.forEach(function (el) { io.observe(el); });
+
+  var btt = document.querySelector('.back-to-top');
+  if (btt) {
+    window.addEventListener('scroll', function () {
+      btt.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    btt.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  var nav = document.querySelector('.site-nav');
+  if (nav) {
+    var cover = document.getElementById('cover');
+    var showAt = cover ? cover.offsetHeight : window.innerHeight;
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > showAt);
+    }, { passive: true });
+  }
+
+  var hint = document.querySelector('.scroll-hint');
+  if (hint) {
+    hint.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = document.getElementById('marketing');
+      if (target) {
+        var top = target.getBoundingClientRect().top + window.scrollY - 76 + 80;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  }
 })();
 </script>
